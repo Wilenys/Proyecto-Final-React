@@ -1,0 +1,26 @@
+nav {
+  background-color: #f8f8f8; /* color de fondo suave */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* leve sombra */
+}
+
+nav ul {
+  list-style: none;         
+  display: flex;            
+  justify-content: center;  
+  gap: 30px;                /* separación entre los ítems */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;   
+  color: #4e4d4d;              
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;           
+}

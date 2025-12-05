@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  flex-direction: column; /* 👈 coloca logo arriba, menú abajo */
+  align-items: center;    /* centra horizontalmente */
+  background-color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  margin-bottom: 10px; /* espacio entre logo y menú */
+}
+
+.logo {
+  height: 150px;       /* ajustá el tamaño según tu logo */
+  width: auto;
+  object-fit: contain;
+}
