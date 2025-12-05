@@ -14,7 +14,7 @@ export const Cart = () => {
       {cart.map((p) => (
         <div className="cart-card" key={p.id}>
           
-          {/* ✔ Imagen correcta usando imageUrl */}
+          
           <img
             src={p.imageUrl}
             alt={p.description}
@@ -27,8 +27,7 @@ export const Cart = () => {
             <p>Cantidad: {p.quantity}</p>
 
             <div className="cart-buttons">
-              <button onClick={() => decrement(p.id)}>-</button>
-              <button onClick={() => increment(p.id)}>+</button>
+              
               <button onClick={() => deleteItem(p.id)}>Eliminar</button>
             </div>
           </div>

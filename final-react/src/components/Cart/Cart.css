@@ -42,11 +42,35 @@
   font-size: 1.6rem;
 }
 
-.checkout-btn,
-.clear-btn {
+/* 🔹 Botones Finalizar y Vaciar */
+.checkout-btn {
   display: block;
   margin: 1rem auto;
   padding: 0.7rem 1.3rem;
   font-size: 1rem;
   cursor: pointer;
+  background-color: #4caf50; /* verde */
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.checkout-btn:hover {
+  background-color: #43a047;
+}
+
+.clear-btn {
+  display: block;
+  margin: 0.5rem auto 1rem auto;
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f44336; /* rojo */
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.clear-btn:hover {
+  background-color: #d32f2f;
 }

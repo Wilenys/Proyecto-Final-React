@@ -22,7 +22,7 @@ export const ItemListContainer = () => {
           );
           setProductos(filtrados);
         } else {
-          // Si NO hay categoría, NO mostramos nada.
+          
           setProductos([]);
         }
       })

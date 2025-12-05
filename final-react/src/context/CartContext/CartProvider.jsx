@@ -30,23 +30,20 @@ export const CartProvider = ({ children }) => {
 
   // 👉 Incrementar cantidad manualmente
   const increment = (id) => {
-    setCart((prev) =>
-      prev.map((p) =>
-        p.id === id ? { ...p, quantity: p.quantity + 1 } : p
-      )
-    );
-  };
+  setCart(prev =>
+    prev.map(p => p.id === id ? { ...p, quantity: p.quantity + 1 } : p)
+  );
+};
 
   // 👉 Disminuir cantidad manualmente
   const decrement = (id) => {
-    setCart((prev) =>
-      prev.map((p) =>
-        p.id === id && p.quantity > 1
-          ? { ...p, quantity: p.quantity - 1 }
-          : p
-      )
-    );
-  };
+  setCart(prev =>
+    prev.map(p => p.id === id && p.quantity > 1
+      ? { ...p, quantity: p.quantity - 1 }
+      : p
+    )
+  );
+};
 
   // 👉 Eliminar product
   const removeItem = (id) => {

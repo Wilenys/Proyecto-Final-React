@@ -14,9 +14,7 @@ export const Nav = () => {
            <li>
             <Link to="/category/articulos">Artículos</Link>
            </li>
-           <li>
-           <Link to="/category/contacto">Contacto</Link>
-          </li>
+           
 
         <li>
           <Link to="/carrito">Carrito</Link>

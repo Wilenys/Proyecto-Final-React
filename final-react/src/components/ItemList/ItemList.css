@@ -1,12 +1,12 @@
 .item-list {
   display: flex;
-  flex-wrap: wrap;           /* Si no entran, bajan a la siguiente fila */
-  justify-content: center;   /* Centra horizontalmente */
-  gap: 20px;                 /* Espacio entre productos */
+  flex-wrap: wrap;           
+  justify-content: center;   
+  gap: 20px;                 
   padding: 20px;
 }
 
 .item-link {
-  text-decoration: none;     /* Saca el subrayado del Link */
-  color: inherit;            /* Mantiene el color del texto del Item */
+  text-decoration: none;     
+  color: inherit;            
 }

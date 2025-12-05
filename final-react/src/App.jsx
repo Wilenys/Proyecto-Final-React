@@ -17,7 +17,7 @@ function App() {
       <CartProvider>
         <Routes>
 
-          {/* LAYOUT PRINCIPAL (Header, logo, footer, etc.) */}
+          
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/category/:categoryId" element={<ItemListContainer />} />
@@ -25,7 +25,7 @@ function App() {
             <Route path="/carrito" element={<Cart />} />
           </Route>
 
-          {/* LAYOUT ADMIN */}
+          
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Login />} />
             <Route

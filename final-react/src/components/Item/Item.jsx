@@ -1,16 +1,18 @@
-import "./Item.css";
-
-export const Item = ({ id, name, price, description, imageUrl, children }) => {
+export const Item = ({ name, price, description, imageUrl, children }) => {
   return (
-    <article className="product-item">
-      <img src={imageUrl} alt={description} />
-
-      <h2 className="product-title">{name}</h2>
-      <p>Precio: ${price}</p>
-      <p>Descripción: {description}</p>
-
-      
-      {children}
-    </article>
+    <div className="card h-100">
+      <img
+        src={imageUrl}
+        className="card-img-top"
+        alt={description}
+        style={{ objectFit: "contain", height: "200px" }}
+      />
+      <div className="card-body d-flex flex-column">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">{description}</p>
+        <p className="card-text fw-bold">Precio: ${price}</p>
+        <div className="mt-auto">{children}</div>
+      </div>
+    </div>
   );
 };
